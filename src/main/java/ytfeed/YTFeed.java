@@ -13,8 +13,16 @@ import com.rometools.rome.io.SyndFeedOutput;
 import com.rometools.rome.io.XmlReader;
 
 public class YTFeed {
+	
+	private User user;
+	private Site site;
+	
+	public YTFeed(User user, Site site) {
+		this.user = user;
+		this.site = site;
+	}
 
-    public static void main(String[] args) {
+    public void feed() {
         
             try {
             	List<String> urls = new ArrayList<String>();
@@ -27,9 +35,10 @@ public class YTFeed {
                 SyndFeed feed = new SyndFeedImpl();
                 feed.setFeedType(outputType);
 
+                feed.setAuthor("anonymous");
+                
                 feed.setTitle("Aggregated Feed");
                 feed.setDescription("Anonymous Aggregated Feed");
-                feed.setAuthor("anonymous");
                 feed.setLink("http://www.anonymous.com");
 
                 List<SyndEntry> entries = new ArrayList<SyndEntry>();
