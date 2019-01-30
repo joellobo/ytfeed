@@ -35,11 +35,11 @@ public class YTFeed {
                 SyndFeed feed = new SyndFeedImpl();
                 feed.setFeedType(outputType);
 
-                feed.setAuthor("anonymous");
+                feed.setAuthor(user.getName());
                 
-                feed.setTitle("Aggregated Feed");
-                feed.setDescription("Anonymous Aggregated Feed");
-                feed.setLink("http://www.anonymous.com");
+                feed.setTitle(site.getTitle());
+                feed.setDescription(site.getDescription());
+                feed.setLink(site.getLink());
 
                 List<SyndEntry> entries = new ArrayList<SyndEntry>();
                 feed.setEntries(entries);
