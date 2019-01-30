@@ -1,4 +1,4 @@
-package ytfeed;
+package ytfeed.model;
 
 public class Site {
 	

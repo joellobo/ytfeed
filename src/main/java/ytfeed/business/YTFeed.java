@@ -1,4 +1,4 @@
-package ytfeed;
+package ytfeed.business;
 
 import java.io.PrintWriter;
 import java.net.URL;
@@ -11,6 +11,9 @@ import com.rometools.rome.feed.synd.SyndFeedImpl;
 import com.rometools.rome.io.SyndFeedInput;
 import com.rometools.rome.io.SyndFeedOutput;
 import com.rometools.rome.io.XmlReader;
+
+import ytfeed.model.Site;
+import ytfeed.model.User;
 
 public class YTFeed {
 	
