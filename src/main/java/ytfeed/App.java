@@ -1,14 +1,14 @@
 package ytfeed;
 
-import ytfeed.business.YTFeed;
-import ytfeed.model.Site;
-import ytfeed.model.User;
+import ytfeed.entity.Feed;
+import ytfeed.entity.Site;
+import ytfeed.entity.User;
 
 public class App {
 
 	public static void main(String[] args) {
 		
-		YTFeed ytfeed = new YTFeed(new User("john"), new Site("Title","description","site.com"));
+		Feed ytfeed = new Feed(new User("john"), new Site("Title","description","site.com"));
 		ytfeed.feed();
 
 	}

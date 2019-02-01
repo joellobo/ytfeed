@@ -1,4 +1,4 @@
-package ytfeed.model;
+package ytfeed.entity;
 
 public class Site {
 	
